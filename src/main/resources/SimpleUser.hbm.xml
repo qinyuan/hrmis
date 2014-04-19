@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="qinyuan.hrmis.domain.admin">
+	<class name="SimpleUser" table="users">
+		<id name="userId" column="userid" type="int">
+			<generator class="identity" />
+		</id>
+		<property name="username" type="string" />
+		<property name="password" type="string" />
+		<property name="nickname" type="string" />
+	</class>
+</hibernate-mapping>

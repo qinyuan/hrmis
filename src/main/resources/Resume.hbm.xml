@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="qinyuan.hrmis.domain.rcr">
+	<class name="Resume" table="rcr_resume">
+		<id name="resumeId" column="resume_id" type="int">
+			<generator class="identity" />
+		</id>
+		<property name="postId" column="post_id" type="int" />
+		<property name="applicant" type="string" />
+		<property name="genderId" column="gender_id" type="int" />
+		<property name="salary" type="string" />
+		<property name="birthday" type="string" />
+		<property name="nativePlace" column="native_place" type="string" />
+		<property name="degreeId" column="degree_id" type="int" />
+		<property name="school" type="string" />
+		<property name="major" type="string" />
+		<property name="resumeLink" column="resume_link" type="string" />
+		<property name="createTime" column="create_time" type="string" />
+		<property name="statusId" column="status_id" type="int" />
+		<property name="dealTime" column="deal_time" type="string" />
+		<property name="dealer" column="dealer" type="int" />
+	</class>
+</hibernate-mapping>

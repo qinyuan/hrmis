@@ -1,0 +1,19 @@
+@CHARSET "UTF-8";
+
+td{
+	vertical-align:top;
+}
+
+div#info {
+	position: absolute;
+	top: 10px;
+	left: 400px;
+}
+
+fieldset {
+	width: 250px;
+}
+
+li {
+	padding: 4px;
+}

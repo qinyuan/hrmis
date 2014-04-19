@@ -1,0 +1,9 @@
+@CHARSET "UTF-8";
+
+div#body {
+	margin: 10px;
+}
+
+input,button {
+	font-size: 12pt;
+}

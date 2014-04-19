@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="qinyuan.hrmis.domain.att.emp">
+	<class name="Employee" table="userinfo">
+		<id name="id" column="userid" type="int">
+			<generator class="identity" />
+		</id>
+		<property name="badgenumber" type="string" />
+		<property name="name" column="username" type="string" />
+		<property name="deptId" column="deptid" type="int" />
+	</class>
+</hibernate-mapping>

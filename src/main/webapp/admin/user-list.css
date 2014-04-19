@@ -1,0 +1,24 @@
+@CHARSET "UTF-8";
+
+div#addForm {
+	position: fixed;
+	left: 400px;
+	top: 180px;
+	font-size: 12pt;
+	background-color: white;
+	display: none;
+}
+
+div#control {
+	position: fixed;
+	left: 400px;
+	top: 100px;
+}
+
+div#addForm button {
+	font-size: 12pt;
+}
+
+div#control input,button {
+	font-size: 12pt;
+}

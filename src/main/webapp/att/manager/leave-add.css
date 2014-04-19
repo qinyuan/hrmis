@@ -1,0 +1,15 @@
+@CHARSET "UTF-8";
+
+form,input,select {
+	font-size: 15px;
+}
+
+#startDate,#endDate {
+	width: 100px;
+}
+
+div.result {
+	position: absolute;
+	left: 300px;
+	top: 70px;
+}

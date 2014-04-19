@@ -1,0 +1,121 @@
+@CHARSET "UTF-8";
+
+#day,#dayback,#search,#weekAndDept {
+	z-index: 3;
+}
+
+#att {
+	position: absolute;
+	top: 110px;
+}
+
+#calendar {
+	display: none;
+	z-index: 4;
+}
+
+#date {
+	position: fixed;
+	left: 600px;
+	top: 50px;
+	z-index: 4;
+}
+
+#day,#dayback {
+	position: fixed;
+	top: 80px;
+}
+
+#emp {
+	position: absolute;
+	top: 110px;
+	left: 10px;
+	z-index: 1;
+}
+
+#header {
+	position: fixed;
+	top: 0px;
+	left: 10px;
+	width: 1200px;
+	height: 95px;
+	background-color: white;
+	z-index: 2;
+}
+
+#search {
+	position: fixed;
+	left: 380px;
+	top: 10px;
+}
+
+#submitResult {
+	position: fixed;
+	font-size: 40px;
+	text-align: center;
+	width: 450px;
+	left: 30%;
+	top: 30%;
+	background-color: #5599ff;
+	display: none;
+	z-index: 4;
+}
+
+#weekAndDept {
+	position: fixed;
+	left: 620px;
+	top: 45px;
+}
+
+table {
+	border-collapse: collapse;
+	padding: 0px;
+}
+
+tr.emp {
+	background-color: #dddddd;
+}
+
+td {
+	padding: 0px;
+	border: 1px solid black;
+}
+
+td.day {
+	height: 20px;
+	text-align: center;
+}
+
+td.dayback {
+	height: 20px;
+	background-color: #dddddd;
+	border: 1px solid #dddddd;
+}
+
+td.empId {
+	width: 40px;
+}
+
+button {
+	border-width: 5px;
+	margin: 0px;
+}
+
+button.nor {
+	border-color: white;
+	background-color: white;
+}
+
+button.red {
+	border-color: #ff3333;
+	background-color: #ff3333;
+}
+
+button.pink {
+	border-color: #ff88c2;
+	background-color: #ff88c2;
+}
+
+#searchText {
+	width: 70px;
+}

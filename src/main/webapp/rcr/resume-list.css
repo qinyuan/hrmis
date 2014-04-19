@@ -1,0 +1,24 @@
+@CHARSET "UTF-8";
+
+table {
+	border-collapse: collapse;
+	border-top: 4px solid black;
+	border-bottom: 4px solid black;
+}
+
+tr.accept{
+	background-color:#ccff99;
+}
+
+tr.reject{
+	background-color:#ffcccc;
+}
+
+tr.undeal{
+	background-color:#dddddd;
+}
+
+td,th{
+	border:1px solid #dddddd;
+	padding:4px;
+}

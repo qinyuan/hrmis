@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://www.springframework.org/schema/beans"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+	<bean id="headNavi" class="qinyuan.lib.web.NaviLinks">
+		<property name="hrefBase" value="/hrmis/user/" />
+		<property name="splitStr" value="|" />
+		<property name="hrefs">
+			<list>
+				<value>login.jsp</value>
+				<value>mdf-nickname.jsp</value>
+				<value>logout.jsp</value>
+			</list>
+		</property>
+		<property name="texts">
+			<list>
+				<value>可用模板</value>
+				<value>修改个人信息</value>
+				<value>退出</value>
+			</list>
+		</property>
+	</bean>
+
+	<bean id="adminNavi" class="qinyuan.lib.web.NaviLinks" abstract="true">
+		<property name="hrefBase" value="/hrmis/admin/" />
+		<property name="hrefs">
+			<list>
+				<value>user-list.jsp</value>
+				<value>user-pri.jsp</value>
+				<value>user-visit-record.jsp</value>
+				<value>data.jsp</value>
+			</list>
+		</property>
+		<property name="texts">
+			<list>
+				<value>用户列表</value>
+				<value>用户权限</value>
+				<value>访问记录</value>
+				<value>数据管理</value>
+			</list>
+		</property>
+	</bean>
+
+	<bean id="adminRowNavi" parent="adminNavi">
+		<property name="splitStr" value="|" />
+	</bean>
+
+	<bean id="adminListNavi" parent="adminNavi">
+		<property name="tag" value="li" />
+	</bean>
+
+	<bean id="attAdminNavi" class="qinyuan.lib.web.NaviLinks"
+		abstract="true">
+		<property name="hrefBase" value="/hrmis/att/admin" />
+		<property name="hrefs">
+			<list>
+				<value>att-data.jsp</value>
+				<value>att-spec-date.jsp</value>
+				<value>att-director.jsp</value>
+				<value>ann-leave-year.jsp</value>
+				<value>ann-leave-batch-mdf.jsp</value>
+				<value>spec-emp.jsp</value>
+			</list>
+		</property>
+		<property name="texts">
+			<list>
+				<value>考勤数据</value>
+				<value>免考勤日期</value>
+				<value>考勤负责人</value>
+				<value>年休假设置</value>
+				<value>批量调整年休</value>
+				<value>特殊人员</value>
+			</list>
+		</property>
+	</bean>
+
+	<bean id="attAdminRowNavi" parent="attAdminNavi">
+		<property name="splitStr" value="|" />
+	</bean>
+
+	<bean id="attAdminListNavi" parent="attAdminNavi">
+		<property name="tag" value="li" />
+	</bean>
+
+	<bean id="attManagerNavi" class="qinyuan.lib.web.NaviLinks"
+		abstract="true">
+		<property name="hrefBase" value="/hrmis/att/manager" />
+		<property name="hrefs">
+			<list>
+				<value>att-detail-width.jsp</value>
+				<value>att-detail-narrow.jsp</value>
+				<value>leave-add.jsp</value>
+				<value>spec-list.jsp</value>
+				<value>att-list.jsp</value>
+				<value>spec-report-set.jsp</value>
+				<value>nor-leave-sum.jsp</value>
+				<value>ann-leave.jsp</value>
+			</list>
+		</property>
+		<property name="texts">
+			<list>
+				<value>出勤(宽)</value>
+				<value>出勤(窄)</value>
+				<value>添加请假</value>
+				<value>更正</value>
+				<value>出勤列表</value>
+				<value>申请单</value>
+				<value>请假汇总</value>
+				<value>年休</value>
+			</list>
+		</property>
+	</bean>
+
+	<bean id="attManagerRowNavi" parent="attManagerNavi">
+		<property name="splitStr" value="|" />
+	</bean>
+
+	<bean id="attManagerListNavi" parent="attManagerNavi">
+		<property name="tag" value="li" />
+	</bean>
+
+
+	<bean id="assAdminNavi" class="qinyuan.lib.web.NaviLinks"
+		abstract="true">
+		<property name="hrefBase" value="/hrmis/ass/admin/" />
+		<property name="hrefs">
+			<list>
+				<value>dept-list.jsp</value>
+				<value>ass-dealer.jsp</value>
+				<value>mon-list.jsp</value>
+				<value>score-tpl-list.jsp</value>
+				<value>value-tpl-list.jsp</value>
+				<value>ass-item-list.jsp</value>
+				<value>info-panel.jsp</value>
+			</list>
+		</property>
+		<property name="texts">
+			<list>
+				<value>部门</value>
+				<value>负责人</value>
+				<value>时间</value>
+				<value>模板(分值)</value>
+				<value>模板(金额)</value>
+				<value>结果</value>
+				<value>公告栏</value>
+			</list>
+		</property>
+	</bean>
+
+	<bean id="assAdminRowNavi" parent="assAdminNavi">
+		<property name="splitStr" value="|" />
+	</bean>
+
+	<bean id="assAdminListNavi" parent="assAdminNavi">
+		<property name="tag" value="li" />
+	</bean>
+
+	<bean id="assDealerNavi" class="qinyuan.lib.web.NaviLinks"
+		abstract="true">
+		<property name="hrefBase" value="/hrmis/ass/dealer" />
+		<property name="hrefs">
+			<list>
+				<value>ass-other.jsp</value>
+				<value>ass-result.jsp</value>
+			</list>
+		</property>
+		<property name="texts">
+			<list>
+				<value>考核其他部门</value>
+				<value>部门考核结果</value>
+			</list>
+		</property>
+	</bean>
+
+	<bean id="assDealerRowNavi" parent="assDealerNavi">
+		<property name="splitStr" value="|" />
+	</bean>
+
+	<bean id="assDealerListNavi" parent="assDealerNavi">
+		<property name="tag" value="li" />
+	</bean>
+
+	<bean id="rcrManagerNavi" class="qinyuan.lib.web.NaviLinks"
+		abstract="true">
+		<property name="hrefBase" value="/hrmis/rcr/manager" />
+		<property name="hrefs">
+			<list>
+				<value>resume-list.jsp</value>
+			</list>
+		</property>
+		<property name="texts">
+			<list>
+				<value>简历列表</value>
+			</list>
+		</property>
+	</bean>
+
+	<bean id="rcrManagerRowNavi" parent="rcrManagerNavi">
+		<property name="splitStr" value="|" />
+	</bean>
+
+	<bean id="rcrManagerListNavi" parent="rcrManagerNavi">
+		<property name="tag" value="li" />
+	</bean>
+
+	<bean id="recruitorNavi" class="qinyuan.lib.web.NaviLinks"
+		abstract="true">
+		<property name="hrefBase" value="/hrmis/rcr/recruitor" />
+		<property name="hrefs">
+			<list>
+				<value>post-list.jsp</value>
+				<value>degree-list.jsp</value>
+				<value>resume-list.jsp</value>
+				<value>resume-add.jsp</value>
+				<value>rcr-manager.jsp</value>
+			</list>
+		</property>
+		<property name="texts">
+			<list>
+				<value>岗位设置</value>
+				<value>学历设置</value>
+				<value>简历列表</value>
+				<value>添加简历</value>
+				<value>招聘负责人</value>
+			</list>
+		</property>
+	</bean>
+
+	<bean id="recruitorRowNavi" parent="recruitorNavi">
+		<property name="splitStr" value="|" />
+	</bean>
+
+	<bean id="recruitorListNavi" parent="recruitorNavi">
+		<property name="tag" value="li" />
+	</bean>
+
+	<bean id="manualNavi" class="qinyuan.lib.web.NaviLinks"
+		abstract="true">
+		<property name="hrefBase" value="/hrmis/manual" />
+		<property name="hrefs">
+			<list>
+				<value>index.jsp</value>
+			</list>
+		</property>
+		<property name="texts">
+			<list>
+				<value>参考手册</value>
+			</list>
+		</property>
+	</bean>
+
+	<bean id="manualRowNavi" parent="manualNavi">
+		<property name="splitStr" value="|" />
+	</bean>
+
+	<bean id="manualListNavi" parent="manualNavi">
+		<property name="tag" value="li" />
+	</bean>
+</beans>

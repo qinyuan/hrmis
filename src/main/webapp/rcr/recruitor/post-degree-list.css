@@ -1,0 +1,7 @@
+@CHARSET "UTF-8";
+
+fieldset {
+	position: fixed;
+	left: 300px;
+	top: 150px;
+}

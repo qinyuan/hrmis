@@ -1,0 +1,33 @@
+div.body {
+	width: 900px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	font-size: 18px;
+}
+
+div.form {
+	width: 260px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+div#info {
+	color: red;
+}
+
+td {
+	padding: 4px;
+}
+
+input.text {
+	font-size: 18px;
+	width: 150px;
+}
+
+#submit {
+	padding: 5px;
+	font-size: 24px;
+	width: 150px;
+}

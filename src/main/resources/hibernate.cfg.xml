@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+	"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+		<property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="connection.url">jdbc:mysql://localhost/hrmis</property>
+		<property name="connection.username">root</property>
+		<property name="connection.password">qinyuan</property>
+		<property name="hibernate.c3p0.max_size">20</property>
+		<property name="hibernate.c3p0.min_size">1</property>
+		<property name="hibernate.c3p0.timeout">5000</property>
+		<property name="hibernate.c3p0.max_statements">100</property>
+		<property name="hibernate.c3p0.idle_test_period">3000</property>
+		<property name="hibernate.c3p0.acquire_increment">2</property>
+		<property name="hibernate.c3p0.validate">true</property>
+		<property name="dialect">org.hibernate.dialect.MySQLInnoDBDialect</property>
+		<property name="show_sql">false</property>
+		<property name="hibernate.format_sql">true</property>
+
+		<mapping resource="SimpleUser.hbm.xml" />
+		<mapping resource="Resume.hbm.xml" />
+		<mapping resource="LeaveType.hbm.xml" />
+		<mapping resource="AccdType.hbm.xml" />
+		<mapping resource="Dept.hbm.xml" />
+		<mapping resource="Employee.hbm.xml" />
+		<mapping resource="AccdItem.hbm.xml" />
+		<mapping resource="LeaveItem.hbm.xml" />
+		<mapping resource="SpecEmp.hbm.xml" />
+	</session-factory>
+</hibernate-configuration>

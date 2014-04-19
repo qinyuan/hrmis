@@ -1,0 +1,24 @@
+@CHARSET "UTF-8";
+
+div#info {
+	position: fixed;
+	left: 400px;
+	top: 80px;
+	width: 300px;
+	border: 1px solid black;
+	width: 300px;
+	line-height: 25px;
+}
+
+div#button {
+	position: fixed;
+	left: 400px;
+	top: 250px;
+}
+
+div#add {
+	position: fixed;
+	left: 200px;
+	top: 250px;
+	display: none;
+}

@@ -1,0 +1,11 @@
+@CHARSET "UTF-8";
+
+div.hidden {
+	display: none;
+}
+
+td {
+	border: 1px solid black;
+	padding: 0px;
+	max-width:400px;
+}

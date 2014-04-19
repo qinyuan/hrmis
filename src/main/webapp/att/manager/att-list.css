@@ -1,0 +1,71 @@
+@CHARSET "UTF-8";
+
+td,th {
+	border: 1px solid #888888;
+	width: 80px;
+	padding: 0px;
+}
+
+.badgenumber {
+	width: 40px;
+}
+
+.name {
+	width: 50px;
+}
+
+.date {
+	width: 50px;
+}
+
+.check {
+	width: 60px;
+}
+
+button {
+	width: 60px;
+	height: 40px;
+	margin: 0px;
+	padding: 0px;
+}
+
+button.red {
+	background-color: red;
+	border-color: red;
+}
+
+button.pink {
+	border-color: #ff88c2;
+	background-color: #ff88c2;
+}
+
+button.nor {
+	background-color: white;
+	border-color: white;
+}
+
+div.head tr {
+	background-color: #cccccc;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+p.head input,select {
+	font-size: 11pt;
+}
+
+div.head {
+	position: fixed;
+	top: 0px;
+	left: 10px;
+	background-color: white;
+	z-index: 2;
+}
+
+div.body {
+	position: relative;
+	left: 2px;
+	top: 160px;
+}

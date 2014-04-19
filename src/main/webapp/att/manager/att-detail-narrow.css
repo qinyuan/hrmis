@@ -1,0 +1,31 @@
+@CHARSET "UTF-8";
+
+#att {
+	left: 110px;
+}
+
+#day,#dayback {
+	left: 110px;
+}
+
+td.day {
+	width: 111px;
+}
+
+td.dayback {
+	width: 55px;
+}
+
+td.empId {
+	height: 45px;
+}
+
+td.name {
+	height: 45px;
+	width: 50px;
+}
+
+button {
+	height: 45px;
+	width: 55px;
+}

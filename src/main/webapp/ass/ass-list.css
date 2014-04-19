@@ -1,0 +1,47 @@
+@CHARSET "UTF-8";
+
+div#info {
+	position: absolute;
+	left: 450px;
+	top: 0px;
+}
+
+div#info fieldset {
+	padding: 0px;
+	font-weight: bold;
+	color: #ff44aa;
+}
+
+div#print {
+	position: absolute;
+	left: 250px;
+	top: 50px;
+}
+
+table {
+	font-size: 11pt;
+}
+
+.mini {
+	width: 5px;
+}
+
+.nar {
+	width: 30px;
+}
+
+.mid {
+	width: 80px;
+}
+
+.wide {
+	width: 200px;
+}
+
+.wider {
+	width: 228px;
+}
+
+.widest {
+	width: 600px;
+}

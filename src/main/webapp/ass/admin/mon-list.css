@@ -1,0 +1,26 @@
+@CHARSET "UTF-8";
+
+div#addForm,div#mdfForm {
+	position: fixed;
+	left: 100px;
+	top: 100px;
+	display: none;
+	background-color: white;
+	z-index: 6;
+}
+
+th.width {
+	width: 80px;
+}
+
+td {
+	text-align: center;
+}
+
+#year,#mon,#mdfYear,#mdfMon {
+	width: 70px;
+}
+
+button,input {
+	font-size: 12pt;
+}

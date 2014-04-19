@@ -1,0 +1,10 @@
+@CHARSET "UTF-8";
+
+div#mdfForm,div#addForm {
+	position: fixed;
+	left: 100px;
+	top: 100px;
+	display: none;
+	background-color: white;
+	z-index: 6;
+}

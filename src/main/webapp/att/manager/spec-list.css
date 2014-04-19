@@ -1,0 +1,32 @@
+@CHARSET "UTF-8";
+
+table {
+	background-color: #ffffff;
+	position: relative;
+	left: 10px;
+}
+
+div#leaveHead,div#accdHead {
+	position: absolute;
+	width: 150px;
+	height: 50px;
+	top: 120px;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 14pt;
+}
+
+div#leaveHead {
+	left: 20px;
+}
+
+div#accdHead {
+	left: 175px;
+}
+
+div#leave,div#accd {
+	position: absolute;
+	width: 800px; left : 10px;
+	top: 150px;
+	left: 10px;
+}

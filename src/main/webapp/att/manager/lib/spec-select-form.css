@@ -1,0 +1,29 @@
+@CHARSET "UTF-8";
+
+#accdMenu,#norLeaveMenu,#othLeaveMenu {
+	z-index: 5;
+}
+
+#accdMenu {
+	position: fixed;
+	left: 830px;
+	top: 0px;
+}
+
+#norLeaveMenu {
+	position: fixed;
+	left: 670px;
+	top: 0px;
+}
+
+#othLeaveMenu {
+	position: fixed;
+	left: 750px;
+	top: 0px;
+}
+
+div.subMenu {
+	positon: absolute;
+	background-color: #77ddff;
+	display: none;
+}

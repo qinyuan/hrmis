@@ -1,0 +1,33 @@
+@CHARSET "UTF-8";
+
+td,th {
+	border: 1px solid #888888;
+	width: 55px;
+	padding:4px;
+}
+
+div.head tr {
+	background-color: #cccccc;
+}
+
+div.body tr {
+	background-color: #eeeeee;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+div.head {
+	position: fixed;
+	top: 0px;
+	left: 10px;
+	background-color: white;
+	z-index: 2;
+}
+
+div.body {
+	position: relative;
+	left: 2px;
+	top: 170px;
+}

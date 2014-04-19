@@ -1,0 +1,14 @@
+@CHARSET "UTF-8";
+
+div#score,div#value {
+	position: fixed;
+	left: 100px;
+	top: 50px;
+	z-index: 6;
+	background-color: white;
+	display: none;
+}
+
+input,select,button,textarea {
+	font-size: 11pt;
+}

@@ -1,0 +1,22 @@
+@CHARSET "UTF-8";
+
+div.hidden {
+	display: none;
+}
+
+.nav a {
+	color: #9955ff;
+}
+
+.nav {
+	font-weight: bold;
+	margin: 4px;
+}
+
+input.common {
+	font-size: 20px;
+}
+
+button.common {
+	font-size: 20px;
+}

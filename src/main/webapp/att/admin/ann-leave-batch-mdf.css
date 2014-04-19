@@ -1,0 +1,17 @@
+@CHARSET "UTF-8";
+
+div#control {
+	position: fixed;
+	left: 600px;
+	top: 100px;
+	background-color: whitesmoke;
+}
+
+div#add,div#reduce,div#set,div#filter {
+	position: fixed;
+	left: 300px;
+	top: 200px;
+	background-color: white;
+	display: none;
+	z-index: 6;
+}

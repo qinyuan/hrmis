@@ -1,0 +1,13 @@
+@CHARSET "UTF-8";
+
+fieldset{
+	padding:5px;
+	margin:10px;
+	width:600px;
+}
+
+div#submit{
+	position:fixed;
+	left:650px;
+	top:300px;
+}

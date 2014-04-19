@@ -1,0 +1,26 @@
+<script src="WdatePicker.js"></script>
+<style>
+#div1 {
+	display: none;
+}
+</style>
+<div id="sup" onmouseover="buttonover()" onmouseout="buttonout()">
+	<input type="button" value="clickMe" />
+	<div id="div1"></div>
+</div>
+<script>
+	WdatePicker({
+		eCont : 'div1',
+		onpicked : function(dp) {
+			alert('你选择的日期是:' + dp.cal.getDateStr())
+		}
+	});
+	function buttonover() {
+		var obj = document.getElementById("div1");
+		obj.style.display = "block";
+	}
+	function buttonout() {
+		var obj = document.getElementById("div1");
+		obj.style.display = "none";
+	}
+</script>

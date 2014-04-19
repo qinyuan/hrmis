@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="qinyuan.hrmis.domain.att.manager">
+	<class name="AccdItem" table="spec_accd">
+		<id name="id" column="accdid" type="int">
+			<generator class="identity" />
+		</id>
+		<property name="empId" column="userid" type="int" />
+		<property name="attDate" column="accddate" type="string" />
+		<property name="reach" column="isreach" type="boolean" />
+		<property name="typeId" column="accdtypeid" type="int" />
+		<property name="operator" type="string" />
+		<property name="operateTime" column="operatetime" type="string" />
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="qinyuan.hrmis.domain.att.manager">
+	<class name="LeaveType" table="leavetype">
+		<id name="id" column="leavetypeid" type="int">
+			<generator class="identity" />
+		</id>
+		<property name="desc" column="leavetype" type="string" />
+		<property name="norm" column="isnorm" type="boolean" />
+	</class>
+</hibernate-mapping>

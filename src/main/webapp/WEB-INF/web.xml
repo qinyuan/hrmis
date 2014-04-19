@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	metadata-complete="true" version="3.0">
+
+	<filter>
+		<filter-name>admin</filter-name>
+		<filter-class>qinyuan.hrmis.lib.filter.AdminFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>admin</filter-name>
+		<url-pattern>/admin/*</url-pattern>
+	</filter-mapping>
+
+	<filter>
+		<filter-name>attManager</filter-name>
+		<filter-class>qinyuan.hrmis.lib.filter.AttManagerFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>attManager</filter-name>
+		<url-pattern>/att/manager/*</url-pattern>
+	</filter-mapping>
+	
+	<filter>
+		<filter-name>attAdmin</filter-name>
+		<filter-class>qinyuan.hrmis.lib.filter.AttAdminFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>attAdmin</filter-name>
+		<url-pattern>/att/admin/*</url-pattern>
+	</filter-mapping>
+
+	<filter>
+		<filter-name>assAdmin</filter-name>
+		<filter-class>qinyuan.hrmis.lib.filter.AssAdminFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>assAdmin</filter-name>
+		<url-pattern>/ass/admin/*</url-pattern>
+	</filter-mapping>
+
+	<filter>
+		<filter-name>assDealer</filter-name>
+		<filter-class>qinyuan.hrmis.lib.filter.AssDealerFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>assDealer</filter-name>
+		<url-pattern>/ass/dealer/*</url-pattern>
+	</filter-mapping>
+
+	<filter>
+		<filter-name>rcrManager</filter-name>
+		<filter-class>qinyuan.hrmis.lib.filter.RcrManagerFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>rcrManager</filter-name>
+		<url-pattern>/rcr/manager/*</url-pattern>
+	</filter-mapping>
+
+	<filter>
+		<filter-name>recruitor</filter-name>
+		<filter-class>qinyuan.hrmis.lib.filter.RecruitorFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>recruitor</filter-name>
+		<url-pattern>/rcr/recruitor/*</url-pattern>
+	</filter-mapping>
+
+	<filter>
+		<filter-name>struts2</filter-name>
+		<filter-class>qinyuan.hrmis.lib.filter.GlobalFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>struts2</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+
+</web-app>

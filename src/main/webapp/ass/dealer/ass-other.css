@@ -1,0 +1,30 @@
+@CHARSET "UTF-8";
+
+div#background {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	height: 2000px;
+	width: 2000px;
+	filter: alpha(Opacity =     80);
+	-moz-opacity: 0.5;
+	opacity: 0.5;
+	z-index: 5;
+	background-color: #222222;
+	display: none;
+}
+
+div#scoreInput,#valueInput {
+	position: fixed;
+	margin: 0px auto;
+	text-align: center;
+	left: 100px;
+	top: 50px;
+	z-index: 6;
+	display: none;
+}
+
+div#close {
+	display: none;
+	z-index: 6;
+}

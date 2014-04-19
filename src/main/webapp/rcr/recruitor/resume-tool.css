@@ -1,0 +1,11 @@
+@CHARSET "UTF-8";
+
+div#tool{
+	position:fixed;
+	top:100px;
+	left:350px;
+}
+
+div#tool select{
+	width:300px;
+}

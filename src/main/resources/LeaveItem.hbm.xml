@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="qinyuan.hrmis.domain.att.manager">
+	<class name="LeaveItem" table="spec_leave">
+		<id name="id" column="leaveid" type="int">
+			<generator class="identity" />
+		</id>
+		<property name="empId" column="userid" type="int" />
+		<property name="attDate" column="specdate" type="string" />
+		<property name="startTime" column="starttime" type="string" />
+		<property name="endTime" column="endtime" type="string" />
+		<property name="typeId" column="leavetypeid" type="int" />
+		<property name="operator" type="string" />
+		<property name="operateTime" column="operatetime" type="string" />
+	</class>
+</hibernate-mapping>

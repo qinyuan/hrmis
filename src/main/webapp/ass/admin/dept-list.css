@@ -1,0 +1,7 @@
+@CHARSET "UTF-8";
+
+div#control {
+	position: fixed;
+	left: 400px;
+	top: 200px;
+}
